@@ -1,3 +1,5 @@
+# Learning Function in python
+# Fuzzbuzz function
 def fuzzbuzzz(number):
     if number % 3 == 0 and number % 5 == 0:
         return "fuzzbuzz"
