@@ -34,3 +34,31 @@
 #     letters.remove("b")
 
 # print(letters)
+
+# numbers = [1, 2, 3, 4, 5, 6, 87, 67, 5, 43, 2]
+# numbers.sort()
+# print(numbers)
+# print(numbers)
+
+# items = [
+#     ("product1", 10),
+#     ("product2", 9),
+#     ("product3", 1000)
+# ]
+
+
+# def sort_item(item):
+#     return item[1]
+
+
+# items.sort(key=sort_item)
+# print(items)
+
+items = [
+    ("product1", 10),
+    ("product2", 9),
+    ("product3", 1000)
+]
+
+items.sort(key=lambda item: item[1])
+print(items)
