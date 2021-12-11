@@ -1,44 +1,58 @@
 
-# # simple palendrone
-# # first_name = "Sai kumar kadiveti"
-# # print(first_name[::-1])
+# # # simple palendrone
+# # # first_name = "Sai kumar kadiveti"
+# # # print(first_name[::-1])
 
-# # # List unpacking
-# # numbers = [1, 2, 3, 4]
-# # first, second, *other = numbers
-# # print(first)
-# # print(other)
+# # # # List unpacking
+# # # numbers = [1, 2, 3, 4]
+# # # first, second, *other = numbers
+# # # print(first)
+# # # print(other)
 
-# # looping over list
+# # # looping over list
 
-# # for index, letter in enumerate(numbers):
-# #     print(index, letter)
+# # # for index, letter in enumerate(numbers):
+# # #     print(index, letter)
 
-# # for letter in enumerate(numbers):
-# #     print(letter[0], letter[1])
+# # # for letter in enumerate(numbers):
+# # #     print(letter[0], letter[1])
 
-# letters = ["a", "b", "c", "b", "d", "b", "f", "b", "e"]
+# # letters = ["a", "b", "c", "b", "d", "b", "f", "b", "e"]
 
-# # adding in the list
+# # # adding in the list
 
-# letters.append("b")
-# letters.insert(1, "w")
+# # letters.append("b")
+# # letters.insert(1, "w")
 
 
-# # Remove from the list
+# # # Remove from the list
 
-# # letters.pop()
+# # # letters.pop()
 
-# for i in range(5):
-#     print(i)
-#     letters.remove("b")
+# # for i in range(5):
+# #     print(i)
+# #     letters.remove("b")
 
-# print(letters)
+# # print(letters)
 
-# numbers = [1, 2, 3, 4, 5, 6, 87, 67, 5, 43, 2]
-# numbers.sort()
-# print(numbers)
-# print(numbers)
+# # numbers = [1, 2, 3, 4, 5, 6, 87, 67, 5, 43, 2]
+# # numbers.sort()
+# # print(numbers)
+# # print(numbers)
+
+# # items = [
+# #     ("product1", 10),
+# #     ("product2", 9),
+# #     ("product3", 1000)
+# # ]
+
+
+# # def sort_item(item):
+# #     return item[1]
+
+
+# # items.sort(key=sort_item)
+# # print(items)
 
 # items = [
 #     ("product1", 10),
@@ -46,31 +60,39 @@
 #     ("product3", 1000)
 # ]
 
-
-# def sort_item(item):
-#     return item[1]
-
-
-# items.sort(key=sort_item)
+# items.sort(key=lambda item: item[1])
 # print(items)
 
-items = [
-    ("product1", 10),
-    ("product2", 9),
-    ("product3", 1000)
-]
+# prices = list(map(lambda item: item[1], items))
+# print(prices)
 
-items.sort(key=lambda item: item[1])
-print(items)
+# PricesGretaer = filter(lambda item: item[1] > 9, items)
+# print(list(PricesGretaer))
 
-prices = list(map(lambda item: item[1], items))
-print(prices)
+# price = [item[1] for item in items]
+# print(price)
 
-PricesGretaer = filter(lambda item: item[1] > 9, items)
-print(list(PricesGretaer))
+# priceGreater = [item for item in items if item[1] > 9]
+# print(priceGreater)
 
-price = [item[1] for item in items]
-print(price)
+# list1 = [1, 2, 3]
+# list2 = [100, 200, 300]
 
-priceGreater = [item for item in items if item[1] > 9]
-print(priceGreater)
+# print(list(zip("abc", list1, list2)))
+
+# string = "saikumar"
+
+# list1 = (1, 2, 3, 4)
+
+
+
+from collections import deque
+
+queue = deque([])
+queue.append(1)
+queue.append(2)
+queue.append(3)
+
+queue.popleft()
+
+print(list(queue))
