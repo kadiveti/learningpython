@@ -122,3 +122,14 @@
 #     char_frequency.items(), key=lambda kv: kv[1], reverse=True)
 
 # print(char_frequency_sorted)
+
+# try:
+#     age = int(input("Age : "))
+# except (ValueError,ZerodividionError) as ex:
+#     print(ex)
+#     print("Please add a valid Age")
+# else:
+#     print("Something")
+#     print("Please add a valid Age")
+#finally:
+#     executes always
